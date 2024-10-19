@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Lists Web UI</title>
+        <script src="./elm.js"></script>
+        <link rel="stylesheet" href="./styles.css" />
+        <script>
+            addEventListener("load", () => {
+                const app = Elm.Main.init({
+                    node: document.getElementById("root"),
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+    </body>
+</html>

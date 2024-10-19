@@ -1,0 +1,155 @@
+/* RESETS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+h1, h2, h3, h4, h5, h6, table, p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: white;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    border: 1px solid #CCC;
+    padding: 0.5rem;
+}
+
+button:hover {
+    background-color: #EEE;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5rem;
+}
+
+th {
+    border: 1px solid #CCC;
+}
+
+input, textarea {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* UTILS */
+.monospace {
+    font-family: monospace;
+}
+
+.no-border-top {
+    border-top: 0;
+}
+
+/* STYLES */
+.app {
+    display: flex;
+    gap: 1rem;
+}
+
+/* error messages and loading screens, centred text in a larger container */
+.message {
+    color: #555;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.lists-manager {
+    display: flex;
+    flex-direction: column;
+
+    width: 15rem;
+    height: 100vh;
+}
+
+.list-manager {
+    width: 100%;
+    max-width: 60rem;
+    margin: 1rem auto;
+}
+
+.list-manager .list-metadata {
+    border: 1px solid #CCC;
+
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.list-manager .list-metadata table, .list-manager .list-metadata th, .list-manager .list-metadata td {
+    width: auto;
+    border: none;
+    margin-bottom: 0;
+}
+
+.list-manager .list-items {
+    margin: 1rem auto;
+}
+
+.list-manager .list-items .index-heading {
+    width: 5%;
+}
+
+.list-manager .list-items .priority-level-heading {
+    width: 10%;
+}
+
+.list-manager .list-items .name-heading {
+    width: 85%;
+}
+
+.list-manager .list-items .priority-level-cell {
+    padding: 0 0.5rem;
+    background-color: #EEE;
+}
+
+.list-manager .list-items select {
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #EEE;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.list-manager .list-items option {
+    font-size: inherit;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.list-manager .list-items .item-name {
+    border: none;
+    width: 100%;
+    resize: vertical;
+    padding: 0.25rem;
+}
+

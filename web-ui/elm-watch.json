@@ -1,0 +1,10 @@
+{
+    "targets": {
+        "web-ui": {
+            "inputs": [
+                "src/Main.elm"
+            ],
+            "output": "public/elm.js"
+        }
+    }
+}
